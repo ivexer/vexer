@@ -251,7 +251,7 @@ async def _(event):
         trys = 0
         await event.edit(f"حسناً سأفحص نوع `{choice}` من اليوزرات على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-        @xdexer.on(events.NewMessage(outgoing=True, pattern=r"\.ك"))
+        @xdexer.on(events.NewMessage(outgoing=True, pattern=r"\.حك"))
         async def _(event):
             if ispay2[0] == "yes":
                 if "on" in isclaim:
